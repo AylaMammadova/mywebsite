@@ -1,0 +1,124 @@
+/* Background Setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.55);
+  z-index: -1;
+}
+
+/* Container */
+.container {
+  background: #F0F8FF;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  width: 350px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Inputs and Select */
+input, select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #67c7d1;
+  box-shadow: 0 0 8px #67c7d1;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+  width: 48%;
+}
+
+/* Main advice button (Sky Blue) */
+#getAdviceBtn {
+  background: #F0F8FF;
+  color: white;
+  background: #F0F8FF;
+}
+
+#getAdviceBtn:hover {
+  background-color: #56b6c0;
+}
+
+/* Reset Button (Soft Red) */
+#resetBtn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+#resetBtn:hover {
+  background-color: #ee5253;
+}
+
+/* Buttons Container */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Response area */
+#response {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #0b6736;
+  min-height: 60px;
+  padding: 15px;
+  background: #e0f7fa;
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+
+/* Image container fix */
+.image-container {
+
+
+background-color: violet;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
